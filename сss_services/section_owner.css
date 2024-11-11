@@ -1,0 +1,20 @@
+.owner_img{
+    width: 35dvw;
+    
+    
+}
+
+.owner_content{
+    margin-top: 6dvw;
+    gap: 4dvw;
+}
+
+.owner_words{
+    border-radius: 64px;
+    padding: 3dvw;
+    border: 2px solid var(--color-green);
+}
+
+.owner_text{
+    font-size: 2dvw;
+}
