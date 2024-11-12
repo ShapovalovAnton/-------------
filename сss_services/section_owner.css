@@ -1,6 +1,6 @@
 .owner_img{
-    width: 35dvw;
-    
+    width: 30dvw;
+    height: 57dvw;
     
 }
 
@@ -10,11 +10,16 @@
 }
 
 .owner_words{
-    border-radius: 64px;
+    border-radius: 5dvw;
     padding: 3dvw;
-    border: 2px solid var(--color-green);
+    border: 3px solid var(--color-green);
 }
 
 .owner_text{
-    font-size: 2dvw;
+    font-size: 1.7dvw;
+}
+
+.owner_h5{
+    margin-top: 5dvw;
+    font-size: 3dvw;
 }

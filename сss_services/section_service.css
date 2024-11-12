@@ -1,0 +1,59 @@
+.section_service{
+    margin-top: 8dvw;
+}
+
+.service_content{
+    margin-top: 6dvw;
+    gap: 6.8dvw;
+}
+
+.service_point{
+    border-radius: 2.6dvw;
+    border: 2px solid var(--color-green);
+    width: 25dvw;
+    margin-bottom: 4dvw;
+}
+
+.service_point_h5{
+    color:var(--color-green);
+    /* margin-top: 1dvw; */
+    font-size: 2.5dvw;
+}
+
+.service_point_content{
+    padding: 1.75dvw;
+}
+
+.service_point_hr{
+    border: none;
+            border-top: 1px solid var(--color-green); /* Толщина и цвет линии */
+            width: 80%; /* Ширина линии */
+            margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.service_point_p{
+
+    color: black;
+    text-align: center;
+    font-size: 1.5dvw;
+}
+
+.service_point_div_price{
+    margin-top:20px;
+    gap: 4dvw;
+}
+
+.service_point_div_price_h3{
+    color: black;
+    font-size: 1.5dvw;
+}
+
+.service_point_div_price_h2{
+    color: var(--color-green);
+    font-size: 3dvw;
+}
+
+.service_point_img{
+    width:25dvw;
+    height: auto;
+}
