@@ -1,0 +1,58 @@
+.offer_section{
+    margin-right: 5%;
+    gap:5%;
+    
+}
+
+.offer_text{
+    flex:40%;
+}
+
+.offer_imgs{
+    flex:60%;
+}
+
+.galleryImage{
+    position: absolute;
+    top:11dvw;
+    height: 35dvw;
+    width: 45dvw;
+    transition: opacity 1s ease-in-out;
+}
+
+.offer_ramca{
+    width:50dvw;
+}
+
+.offer_h3{
+    font-family: var(--font-family-h);
+    margin-bottom: 2dvw;
+    margin-top: 10dvw;
+    font-weight: bold;
+    font-size: 5dvw;
+}
+
+.offer_text{
+    font-size: 1.5dvw;
+}
+
+.rectangles{
+    position: relative;
+    top:-4dvw;
+    gap: 1dvw;
+    left:3dvw;
+}
+
+@media (max-width:1100px){
+    
+     .svg_offer {
+        width: 8dvw;
+        height: 1dvw;
+    }
+
+    .gallery .rectangles{
+        gap: 0;
+    }
+
+}
+

@@ -1,0 +1,56 @@
+.service_section{
+    margin-top: 30dvw;
+    margin-left: 5%;
+    gap:5dvw;
+}
+
+.galleryImageService{
+    position: absolute;
+    top:143dvw;
+    right: 0;
+    height: 35dvw;
+    width: 45dvw;
+    transition: opacity 1s ease-in-out;
+}
+
+.service_ramca{
+    align-self: end;
+}
+
+.service_ramca{
+    width: 50dvw;
+}
+
+.rectangles_service {
+    gap:1dvw;
+    position: relative;
+    top:-2.5dvw;
+    left:12dvw;
+    width: 40dvw;
+}
+
+.service_a{
+    background-color: white;
+    font-size: 2dvw;
+    font-family: var(--font-family-h);
+    border-radius: 53px;
+    padding-left: 4dvw;
+    width: 20dvw;
+    height: 5dvw;
+    color:var(--color-green);
+    margin-left: 6dvw;
+    align-items: center;
+    border: 0.25dvw solid var(--color-green);
+    box-shadow: 0px 1dvw 2dvw rgba(0, 0, 0, 0.2);
+    margin-top: 2dvw;
+    transition: all 0.4s;
+}
+
+.service_a:hover{
+    font-size: 2.5dvw;
+    padding-left: 3dvw;
+    width: 22dvw;
+    height: 5.5dvw;
+    margin-left: 5dvw;
+
+}

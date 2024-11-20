@@ -1,0 +1,23 @@
+.contact_section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10dvw;
+    
+}
+
+.contact_back_img{
+    width: 100%;
+    z-index: 1;
+}
+
+.contact_p{
+color: white;
+position: relative;
+top: -10dvw;
+z-index: 3;
+font-size: 2.9dvw;
+justify-content: center;
+width: 72dvw;
+left: 10dvw;
+text-align: center;
+}

@@ -1,0 +1,134 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(header.css);
+@import url(offer_section.css);
+@import url(footer.css);
+@import url(service_section.css);
+@import url(efficient_section.css);
+@import url(employee_section.css);
+@import url(contact_section.css);
+@import url(adaptive.css);
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* Сайт по центру */
+    margin: auto;
+
+}
+
+a{
+    color: white;
+}
+a:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Перенос на наступний рядок */
+.flex_wrap{
+    flex-wrap: wrap;
+}
+/* Вирівнбвання по вертикалі */
+.flex_align_center{
+    align-items: center;
+}
+
+.flex_align_start{
+    align-items: start;
+}
+
+.flex_align_end{
+    align-items: end;
+}
+
+.flex_align_self_end{
+    align-items: end;
+}
+/* Вирівнбвання по горизонталі */
+.flex_justify_center{
+    justify-content: center;
+}
+.flex_justify_self_center{
+    justify-self: center;
+}
+.flex_justify_end{
+    justify-content: end;
+}
+
+.flex_justify_self_end{
+    justify-self: end;
+}
+.flex_column{
+    flex-direction: column;
+}
+
+.flex_justify_space{
+    justify-content: space-around;
+}
+
+.flex_1{
+    flex:1;
+}
+
+.flex_align_self_center{
+    align-self: center;
+}
+
+.flex_align_self_start{
+    align-self: start;
+}
+.flex_align_self_end{
+    align-self: end;
+}
+
+.align_content_space_between{
+    align-content: space-between;
+}
+
+.gap_30px{
+    gap:30px;
+}
+
+
+
+.service_h2{
+    font-family: var(--font-family-text);
+    font-size: 3.5dvw;
+}
+
+.get_start_list{
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+main 
+{
+    position: relative;
+    top:8dvw;
+    font-family: var(--font-family-text);
+}
+
+.article{
+gap: 150px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.color_green{
+    color:var(--color-green);
+}
+.bold{
+    font-weight: bold;
+}
+.main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
