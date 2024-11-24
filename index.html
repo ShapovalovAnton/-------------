@@ -7,16 +7,31 @@
     <link type="text/css" rel="stylesheet" href="css_main\style.css">
     <script src="js/main_js.js"></script>
 </head>
+
 <body>
+    <!-- <div class="off-screen-menu">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="employees.html">Наша команда</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="index.html">Контакти</a></li>
+        </ul>
+    </div> -->
     <header class="service_header flex flex_column">
         
         <nav class="service_header_nav flex flex_column">
-            <img class="service_header_nav_img"src="img\service_header_nav_back.png">
+            <img class="service_header_nav_img" src="img\main_header_nav.svg">
             <div class="service_header_nav_content flex flex_justify_space">
-                <a class="nav_point" href="#">Про нас</a>
-                <a class="nav_point" href="#">Наша команда </a>
-                <a class="nav_point" href="#"> Послуги</a>
-                <a class="nav_point" href="#"> Контакти</a>
+                <img  class="main_logo"  src="img\logo.svg">
+                <a class="nav_point" href="index.html">Про нас</a>
+                <a class="nav_point" href="employees.html">Наша команда </a>
+                <a class="nav_point" href="services.html"> Послуги</a>
+                <a class="nav_point" href="contacts.html"> Контакти</a>
+                <div id="BURGER" class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 </div>
             </div>
             
@@ -25,7 +40,7 @@
             <h1 class="service_header_content_h1">Вітаємо Вас на сайті Ветеринарної клініки ВетКлініка</h1>
             <div class="flex flex_justify_end">
                 <div class="service_header_content_a">
-                    <a href="#">Записатись</a>
+                    <a href="contacts.html">Записатись</a>
                     <img class="header_call_img" src="img\call_icon.svg">
                 </div>
                 
@@ -90,9 +105,9 @@
             </section>
             <section class="employee_section">
                 <div class="flex employee_imgs">
-                    <a><img class="employee_img_norm" src="img\employee\employee1.png"></a>
-                    <a><img class="employee_img_norm" src="img\employee\employee2.png"></a>
-                    <a><img class="employee_img_norm" src="img\employee\employee3.png"></a>
+                    <a href="employees.html"><img class="employee_img_norm" src="img\employee\employee1.png"></a>
+                    <a href="employees.html"><img class="employee_img_norm" src="img\employee\employee2.png"></a>
+                    <a href="employees.html"><img class="employee_img_norm" src="img\employee\employee3.png"></a>
                 </div>
                 <img class="employee_back" src="img\employee\employee_back.svg">
                 <div class="flex flex_column employee_content">
@@ -104,7 +119,7 @@
 
                         Наш персонал працює з увагою до кожної деталі, гарантуючи надійність і турботу про кожного пацієнта.
                     </p>
-                    <a class="employee_a flex bold">Детальніше...</a>
+                    <a href="employees.html" class="employee_a flex bold">Детальніше...</a>
 
                 </div>
             </section>
@@ -122,7 +137,7 @@
                         Також пропонуємо встановлення додаткових функцій, покращення енергоефективності, декорування та кастомізацію зовнішнього вигляду. 
                     </p>
 
-                    <a class="service_a flex bold">Детальніше...</a>
+                    <a href="services.html" class="service_a flex bold">Детальніше...</a>
 
 
                 </div>
@@ -161,10 +176,67 @@
             <section class="contact_section flex flex_column">
                 <img class="contact_back_img" src="img\contact\contact_back.png">
                 <p class="contact_p flex">Ваша механічна тварина заслуговує на краще – запишіться до нас вже сьогодні!</p>
+                <div class="contact_a">
+                    <a href="contacts.html">Записатись</a>
+                    <img class="header_call_img" src="img\call_icon.svg">
+                </div>
 
             </section>
 
+
         </article>
     </main>
+    <footer>
+        <img class="header_back_img" src="img\Group 2153.png">
+        <div class="container">
+            <!-- Контакти -->
+            <div class="contact-info">
+                <h2>Контакти</h2>
+                <p>+ (380) 97 518 19 94</p>
+                <p>+ (380) 99 518 19 94</p>
+            </div>
+        
+            <!-- Меню -->
+            <div class="menu">
+                <h2>Меню</h2>
+                <p><a href="index.html">Про нас</a></p>
+                <p><a href="employees.html">Наша команда</a></p>
+                <p><a href="services.html">Послуги</a></p>
+                <p><a href="contacts.html">Контакти</a></p>
+            </div>
+        
+            <!-- Наше розташування -->
+            <div class="location">
+                <h2>Наше розташування</h2>
+                <p>вулиця Богдана Гаврилишина, 24,<br>Київ, 02000</p>
+                <img src="img/map.svg" alt="" class="map">
+            </div>
+        
+            <!-- Соціальні мережі -->
+            <div class="social-media">
+                <h2>Соціальні мережі</h2>
+                <div class="social-icons">
+                    <!-- Іконка Instagram з посиланням -->
+                    <a href="#" class="icon-link">
+                        <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000">
+                    </a>
+                    <a href="#" class="icon-link">
+                        <img src="https://img.icons8.com/?size=100&id=62225&format=png&color=000000">
+                    </a>
+                    <a href="#" class="icon-link">
+                        <img src="https://img.icons8.com/?size=100&id=61956&format=png&color=000000" alt="">
+                    </a>
+                    <a href="#" class="icon-link">
+                        <img src="https://img.icons8.com/?size=100&id=PedPR10iVAnY&format=png&color=000000" alt="">
+                    </a>
+                    <a href="#" class="icon-link">
+                        <img src="https://img.icons8.com/?size=100&id=437&format=png&color=000000" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

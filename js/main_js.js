@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const img = document.querySelectorAll('.header_gear');
+    const img = document.querySelectorAll('.rotate');
     
     img.forEach(image => {
       let angle = 0;

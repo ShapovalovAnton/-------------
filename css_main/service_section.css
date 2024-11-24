@@ -54,3 +54,24 @@
     margin-left: 5dvw;
 
 }
+
+.contact_a{
+    position: relative;
+    font-family: var(--font-family-h);
+    top:-6dvw;
+    left:30dvw;
+    width: 27dvw;
+    background-color: var(--color-green);
+    opacity: 90%;
+    font-size: 2.8dvw;
+    font-weight: bold;
+    border-radius: 64px;
+    padding: 1dvw 3dvw ;
+    transition: opacity 0.4s ease;
+    
+
+}
+
+.contact_a:hover{
+    opacity: 100%;
+}

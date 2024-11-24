@@ -1,0 +1,119 @@
+/* Футер */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5dvw;
+    margin-top: 2dvw;
+    
+}
+
+footer{
+    margin-top: 14dvw;;
+}
+.header_back_img{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+
+footer h2{
+    font-size: 2.25dvw;
+    color: #fff;
+    font-family: var(--font-family-h);
+    font-weight: bold;
+    margin-bottom: 1.25dvw;
+}
+
+footer p{
+    color: #fff;
+    font-size: 1.5dvw;
+    font-family: var(--font-family-h);
+    margin-bottom: 0.1dvw;
+    
+}
+
+footer p a{
+    font-weight: bold;
+    margin-bottom: 0.5dvw;
+    font-size: 1.75dvw;
+}
+
+.map {
+    width: 21dvw;
+    margin-top: 2dvw;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 19dvw;
+    gap: 1dvw;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 3dvw;
+    height: 3dvw;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для посилання */
+.icon-link {
+    display: inline-block;
+    width: 5dvw;
+    height: 5dvw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+/* Зміна стилів при наведенні */
+.icon-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Стилі для самої іконки */
+.icon-link img {
+    width: 60%;
+    height: 60%;
+    margin-top: 20%;
+    transition: opacity 0.3s;
+}
+
+/* Зміна прозорості іконки при наведенні */
+.icon-link:hover img {
+    opacity: 0.8;
+}
+
+/* Стиль для секції спеціалістів */
+.specialists {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-image: url(../img/2.jpg);
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Gabriela&display=swap');
+
+:root{
+    /* Кольори */
+    --color-green: #269C0D;
+    /* Шрифти */
+    --font-family-h: "Arsenal SC";
+    --font-family-text: "Gabriela";
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-text: 32px;
+
+}
