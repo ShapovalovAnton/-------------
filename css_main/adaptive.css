@@ -1,0 +1,17 @@
+@media (max-width: 800px){
+    .nav_point{
+        display: none;
+    }
+    
+    .off-screen-menu{
+        display: block;
+    }
+    
+    .ham-menu{
+        display: block;
+    }
+
+    .nav{
+        display: flex;
+    }
+  }

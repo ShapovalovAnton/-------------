@@ -35,20 +35,21 @@
 
 
 .off-screen-menu{
-    background-color: #269C0D;
+    background-color: var(--color-green);
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 50dvw;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -500px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
-    z-index: 7;
+    z-index: 20;
+    font-family: var(--font-family-h);
   }
 
   .off-screen-menu.active{
@@ -56,6 +57,7 @@
 
   }
 
+  /* Стилі списку */
 .off-screen-menu ul {
     list-style: none;
     padding: 0;
@@ -69,38 +71,45 @@
 .off-screen-menu li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
+    font-size: 4dvw;
+    padding: 1dvw 2dvw;
+    border-radius: 36px;
     transition: background-color 0.3s;
 }
 
 .off-screen-menu li a:hover {
-    background-color: #555; /* Легке затемнення при наведенні */
+    background-color: #ffffff; /* Легке затемнення при наведенні */
+    color: var(--color-green);
 }
 
+  .nav{
+    display: flex;
+    background-color: #000;
+    border-radius: 0 0 64px 64px;
+    justify-content: space-around;
+  }
 
 .ham-menu{
-    height: 3dvw;
+    position: fixed;
+    top:0;
+    right:2dvw;
+    height: 5dvw;
     width: 10dvw;
     margin-left: auto;
-    position: relative;
-    z-index: 8;
-    left:-15dvw;
-
+    z-index: 21;
 }
 
 .ham-menu span{
-    height: 0.25dvw;
+    height: 0.6dvw;
     width: 100%;
-    background-color: white;
+    background-color: var(--color-green);
     border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-
+    
 }
 
 
@@ -110,20 +119,31 @@
 
 .ham-menu span:nth-child(3){
     top: 75%;
+
 }
 
 .ham-menu.active span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%)  rotate(45deg);
+    background-color: #8dff76;
+    top:4dvw;
+
 }
 
 .ham-menu.active span:nth-child(2){
     opacity: 0;
+    
+
+
 }
 
 .ham-menu.active span:nth-child(3){
     top: 50%;
     transform: translate(-50%, 50%)  rotate(-45deg);
+    background-color: #8dff76;
+    top:4dvw;
+
+
 }
 
 
@@ -135,32 +155,11 @@
     display: none;
 }
 
-#BURGER{
+.nav{
     display: none;
 }
 
-/* @media (max-width: 600px){
 
-    div #BURGER{
-        display: flex;
-
-    }
-
-    div .nav_point{
-        display: none;
-    }
-    .off-screen-menu{
-        display: block;
-    }
-    
-    .ham-menu{
-        display: block;
-    }
-
-    .nav{
-        display: flex;
-    }
-  } */
 
 .service_header_nav_content{
     z-index: 5;
@@ -180,17 +179,6 @@
     position: relative;
 }
 
-/* .nav_point::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 4px; 
-    background: linear-gradient(90deg, #269C0D, #ff6600);
-    border-radius: 2px;
-    transition: width 0.4s ease;
-} */
 
 .nav_point:hover {
     color: #269C0D;

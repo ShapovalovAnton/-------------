@@ -12,6 +12,7 @@
     border: 2px solid var(--color-green);
     width: 25dvw;
     margin-bottom: 4dvw;
+    transition: all 0.3s;
 }
 
 .service_point_h5{
@@ -56,4 +57,13 @@
 .service_point_img{
     width:25dvw;
     height: auto;
+}
+
+.service_point:hover{
+    background-color: var(--color-green);
+    
+}
+.service_point:hover *{
+    color: white;
+    
 }
