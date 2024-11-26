@@ -1,7 +1,5 @@
-/* Основні стилі */
-
 @import url(base.css);
-
+/* Основні стилі */
 * {
     margin: 0;
     padding: 0;
@@ -19,58 +17,48 @@ body {
     margin: 0 auto;
 }
 
-/* Шапка сайту */
 header {
+    font-family: var(--font-family-h);
     display: flex;
-    background-image: url('../img/2.jpg'); /* Заданий шлях до зображення */
-    background-size: cover;
+    background-image: url('../img/employee_header.svg'); /* Заданий шлях до зображення */
+    background-size: 100dvw auto; /* 100% ширини вікна перегляду, висота автоматична */
     background-position: top;
     background-attachment: fixed;
     color: white;
     padding: 10px 0;
     border-radius: 0 0 64px 64px;
-    height: 100px;
+    height: 77px;
     align-items: center;
     justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
     overflow: hidden;
+    border-bottom: 2px solid var(--color-green);
 }
 
+
 header::before {
-    content: ''; 
-    position: absolute; 
-    top: 0; 
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Напівпрозоре чорне затемнення */
-    z-index: -1; /* Псевдоелемент знаходиться під контентом */
+    background: rgba(0, 0, 0, 0.6); /* 40% затемнення */
+    z-index: -1; /* Поміщаємо затемнення за контент */
 }
 
 /* Логотип */
 .logo {
-    height: 70px;
-    background-color: #269C0D;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: rotate 10s linear infinite;
 }
 
-/* Анімація обертання логотипу */
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 /* Стилі навігації */
 header nav {
@@ -81,14 +69,15 @@ header nav {
 header nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
     position: relative;
     transition: transform 0.4s ease, color 0.3s ease;
 }
 
-header nav a::after {
+/* header nav a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -98,17 +87,20 @@ header nav a::after {
     background: linear-gradient(90deg, #269C0D, #ff6600);
     border-radius: 2px;
     transition: width 0.4s ease;
-}
+} */
 
 header nav a:hover {
     color: #269C0D;
-    transform: rotateY(20deg) rotateX(10deg);
+    transform: rotateY(20deg) rotateX(10deg) scale(1.1);
 }
 
 header nav a:hover::after {
     width: 100%;
 }
 
+.employee_header_img{
+width: 100%;
+}
 /* Основний контент */
 main {
     margin-top: 100px;
@@ -221,26 +213,25 @@ p {
     background-color: #4cae4c;
 }
 
-.header_back_img{
-position: relative;
-top:-2dvw;
-z-index: -1;
-}
 /* Футер */
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 4.8dvw;
+    padding: 40px;
+    background-image: url(../img/Group\ 2153.png);
 }
 
 .contact-info, .menu, .location, .social-media {
-    margin-bottom: 1dvw;
+    margin-bottom: 20px;
 }
 
+footer{
+    font-family: var(--font-family-h);
+}
 footer h2{
+    margin-bottom: 20px;
     font-size: 32px;
     color: #fff;
-    font-family: var(--font-family-h);
 }
 
 footer p{
@@ -308,11 +299,12 @@ a:hover {
 }
 
 /* Стиль для секції спеціалістів */
+
 .specialists {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1200px;
+    height: 120dvw;
     color: white;
     display: flex;
     justify-content: center;
@@ -324,9 +316,25 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 10px;
     background-size: cover;
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/2.1.svg);
 }
 
+.specialists-text_h1{
+font-size: 5dvw;
+position: absolute;
+    top:14dvw;
+    color: white;
+    font-family: var(--font-family-h);
+    left: 40dvw;
+}
+
+.specialists-text_p{
+    font-size: 2dvw;
+position: absolute;
+    top:43dvw;
+    color: white;
+    left: 36dvw;
+    }
 /* Текстовий контент в секції */
 .specialists h1, .specialists p {
     position: relative;
@@ -424,20 +432,20 @@ a:hover {
 
 
   .off-screen-menu{
-    background-color: #ff6600;
+    background-color: #006400;
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 300px;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
-    z-index: 1;
+    z-index: 20;
   }
 
   .off-screen-menu.active{
@@ -456,6 +464,10 @@ a:hover {
     padding: 20px;
 }
 
+.menu-links{
+    z-index: 30;
+}
+
 .off-screen-menu li a {
     text-decoration: none;
     color: white;
@@ -469,19 +481,21 @@ a:hover {
     background-color: #555; /* Легке затемнення при наведенні */
 }
 
-  .nav{
-    padding: 1rem;
+.nav {
+    padding: 1rem 3rem; /* Відступи зверху/знизу і зліва/справа */
     display: flex;
-    background-color: #000;
+    background-image: url('../img/employee_header_nav.jpg');
     border-radius: 0 0 64px 64px;
     justify-content: space-around;
-  }
+    border-bottom: 5px solid #269C0D;
+}
 
 .ham-menu{
     height: 50px;
     width: 50px;
     margin-left: auto;
     position: relative;
+    z-index: 30;
 }
 
 .ham-menu span{
@@ -494,7 +508,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-    z-index: 2;
+    z-index: 30;
 }
 
 
@@ -508,7 +522,8 @@ a:hover {
 
 .ham-menu.active span:nth-child(1){
     top: 50%;
-    transform: translate(-50%, -50%)  rotate(45deg);
+    transform: translate(-50%, 50%)  rotate(45deg);
+    z-index: 30;
 }
 
 .ham-menu.active span:nth-child(2){
@@ -518,6 +533,7 @@ a:hover {
 .ham-menu.active span:nth-child(3){
     top: 50%;
     transform: translate(-50%, 50%)  rotate(-45deg);
+    z-index: 30;
 }
 
 
@@ -548,8 +564,8 @@ a:hover {
     }
   }
 
-  @media (max-width: 800px){
-    header{
+  @media (max-width: 910px){
+    .bye, header{
         display: none;
     }
     
@@ -558,6 +574,7 @@ a:hover {
     }
     .off-screen-menu{
         display: block;
+        z-index: 11;
     }
     
     .ham-menu{
@@ -566,6 +583,12 @@ a:hover {
 
     .nav{
         display: flex;
+        top: 0;
+        width: 100%;
+        z-index: 6;
+    }
+    #header_img{
+        display: none;
     }
   }
 
@@ -588,3 +611,68 @@ a:hover {
         right: 40px;
     }
   }
+
+  /* Спочатку елементи будуть невидимими */
+.specialist-content,
+.specialist-content-inner {
+    opacity: 0;
+    transform: translateY(30px); /* Вихід знизу */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Клас для показу елементів */
+.specialist-content.in-view,
+.specialist-content-inner.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Міжзображеневий відступ */
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .gear-line{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  
+  .gear-img {
+    width: 10dvw; /* Розмір зображень */
+    height: 10dvw; /* Розмір зображень */
+    animation: rotate-gear 10s linear infinite;
+  }
+  
+  /* Анімація для обертання кожного зображення */
+  @keyframes rotate-gear {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Додаткові стилі для різних швидкостей обертання */
+  .gear-1 {
+    animation-duration: 10s; /* Перше зображення */
+  }
+  
+  .gear-2 {
+    animation-duration: 12s; /* Друге зображення */
+  }
+  
+  .gear-3 {
+    animation-duration: 15s; /* Третє зображення */
+  }
+  
+  .main_logo{
+    width: 20dvw;
+    position: relative;
+    z-index: 5;
+}

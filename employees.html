@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SteamVet</title>
+    <link rel="icon" href="img\browse_icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="img\browse_icon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans+Georgian:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +20,7 @@
         </ul>
     </div>
     <nav class="nav">
-        <img src="img/Group.svg" alt="" class="logo">
+        <img src="img\logo.svg" alt="" class="logo">
         <div class="ham-menu">
             <span></span>
             <span></span>
@@ -28,28 +28,30 @@
         </div>
             
     </nav>
-    <div class="specialists">
-        <div class="specialists-text">
-            <h1>Спеціалісти</h1>
-            <p>Наша команда займається найскладнішими випадками та рятує життя тварин</p>
-        </div>
-        
-    </div>
+    
+    <img id="header_img" class="employee_header_img" src="img\employee_header.svg">
+    <h1 class="specialists-text_h1">Спеціалісти</h1>
+    <p class="specialists-text_p">Наша команда рятує життя тварин</p>
     <header>
-        <img src="img/Group.svg" alt="" class="logo">
+        <img  src="img/logo.svg" alt="" class="main_logo">
         
         <nav class="menu-links">
-            <a href="index.html">Головна</a>
-            <a href="employees.html">Наша команда</a>
-            <a href="services.html">Послуги</a>
-            <a href="contacts.html">Контакти</a>
-        </nav>
+            <a class="bye" href="index.html">Головна</a>
+            <a class="bye" href="employees.html">Наша команда</a>
+            <a class="bye" href="services.html">Послуги</a>
+            <a class="bye" href="contacts.html">Контакти</a>
     </header>
     
     
     <main>
         
         
+        <div class="gear">
+            <img src="img/Back_line_header.svg" alt="" class="gear-line">
+            <img src="img/main_ gears.svg" alt="" class="gear-img gear-1">
+            <img src="img/main_ gears.svg" alt="" class="gear-img gear-2">
+            <img src="img/main_ gears.svg" alt="" class="gear-img gear-3">
+        </div>
         
         <div class="specialists-container">
             <div class="specialist-card">
@@ -144,8 +146,8 @@
                 </div>
             </div>
         </div>
-        <section class="specialist-content">
-            <div class="specialist-content-inner">
+        <section class="specialist-content in-view">
+            <div class="specialist-content-inner in-view">
                 <div class="specialist-content-img">
                     <img src="img/content-photo.svg" alt="">
                 </div>
@@ -209,7 +211,6 @@
                 </div>
             </div>
         </div>
-        <img class="header_back_img" src="img\Group 2153.png">
     </footer>
     <script src="js/script.js"></script>
 </body>
