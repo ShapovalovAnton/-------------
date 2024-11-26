@@ -38,5 +38,39 @@ document.querySelectorAll('.specialist-card').forEach(card => {
     observer.observe(card);
 });
 
+document.querySelector('.submit-button').addEventListener('click', function () {
+    // Знаходимо всі поля
+    const nameField = document.querySelector('.input-field1').value.trim();
+    const phoneField = document.querySelector('.input-field2').value.trim();
+    const petNameField = document.querySelector('.input-field3').value.trim();
+    const commentField = document.querySelector('.input-field4').value.trim();
+    const modal = document.getElementById('modal');
+    const modalMessage = document.getElementById('modal-message');
+
+    // Перевірка заповнення полів
+    if (nameField && phoneField && petNameField && commentField) {
+      modalMessage.textContent = 'Дані успішно відправлено! Дякуємо';
+      modalMessage.style.color = 'green';
+    } else {
+      modalMessage.textContent = 'Будь ласка, заповніть всі дані.';
+      modalMessage.style.color = 'red';
+    }
+
+    // Показуємо модальне вікно
+    modal.style.display = 'block';
+  });
+
+  // Закриття модального вікна
+  document.querySelector('.close').addEventListener('click', function () {
+    document.getElementById('modal').style.display = 'none';
+  });
+
+  // Закриття модального вікна при натисканні за межами вікна
+  window.addEventListener('click', function (event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
 
 
